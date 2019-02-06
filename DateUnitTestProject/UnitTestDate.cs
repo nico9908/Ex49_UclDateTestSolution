@@ -72,17 +72,17 @@ namespace DateUnitTestProject
         [TestMethod]
         public void MoveToNextDate()
         {
-            Assert.AreEqual(ucl.MoveToNextDate(), 1);
+            
         }
         [TestMethod]
         public void MoveToPrevDate()
         {
-            Assert.AreEqual(ucl.MoveToPrevDate(), 1);
+            
         }
         [TestMethod]
         public void MoveDays()
         {
-            Assert.AreEqual(ucl.MoveDays(), 1);
+            
         }
         [TestMethod]
         public void GetDayNumber()
