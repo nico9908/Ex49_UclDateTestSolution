@@ -57,7 +57,7 @@ namespace DateUnitTestProject
         [TestMethod]
         public void GetQuarter()
         {
-
+            Assert.AreEqual(ucl.GetQuater(), 4);
         }
         [TestMethod]
         public void GetMonthTxt()
@@ -67,7 +67,47 @@ namespace DateUnitTestProject
         [TestMethod]
         public void GetQuarterTxt()
         {
-
+            Assert.AreEqual(ucl.GetQuaterTxt(), "Oktober kvartal");
+        }
+        [TestMethod]
+        public void MoveToNextDate()
+        {
+            Assert.AreEqual(ucl.MoveToNextDate(), 1);
+        }
+        [TestMethod]
+        public void MoveToPrevDate()
+        {
+            Assert.AreEqual(ucl.MoveToPrevDate(), 1);
+        }
+        [TestMethod]
+        public void MoveDays()
+        {
+            Assert.AreEqual(ucl.MoveDays(), 1);
+        }
+        [TestMethod]
+        public void GetDayNumber()
+        {
+            Assert.AreEqual(ucl.GetDayNumber(), 333);
+        }
+        [TestMethod]
+        public void SetDayNumber()
+        {
+            Assert.AreEqual(ucl.GetDayNumber(), 333);
+        }
+        [TestMethod]
+        public void GetAbsDayNumber()
+        {
+            Assert.AreEqual(ucl.GetAbsDayNumber(), -1);
+        }
+        [TestMethod]
+        public void GetWeekDay()
+        {
+            Assert.AreEqual(ucl.GetWeekDay(), 5);
+        }
+        [TestMethod]
+        public void GetWeek()
+        {
+            Assert.AreEqual(ucl.GetWeek(), 47);
         }
     }
 }
