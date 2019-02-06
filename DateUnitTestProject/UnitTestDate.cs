@@ -30,6 +30,21 @@ namespace DateUnitTestProject
             Assert.AreEqual(ucl.GetDay(), 29);
         }
         [TestMethod]
+        public void SetYear()
+        {
+            Assert.AreEqual(ucl.SetYear());
+        }
+        [TestMethod]
+        public void SetMonth()
+        {
+
+        }
+        [TestMethod]
+        public void SetDay()
+        {
+
+        }
+        [TestMethod]
         public void GetDateStringYMD()
         {
             Assert.AreEqual(ucl.GetDatoStringYMD(), "2019-12-29");
@@ -40,9 +55,19 @@ namespace DateUnitTestProject
             Assert.AreEqual(ucl.GetDatoStringDMY(), "29/12/2019");
         }
         [TestMethod]
+        public void GetQuarter()
+        {
+
+        }
+        [TestMethod]
         public void GetMonthTxt()
         {
             Assert.AreEqual(ucl.GetMonthTxt(), "December");
+        }
+        [TestMethod]
+        public void GetQuarterTxt()
+        {
+
         }
     }
 }
