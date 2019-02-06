@@ -32,17 +32,17 @@ namespace DateUnitTestProject
         [TestMethod]
         public void SetYear()
         {
-            Assert.AreEqual(ucl.SetYear());
+            Assert.AreEqual(ucl.GetYear(), 2019);
         }
         [TestMethod]
         public void SetMonth()
         {
-
+            Assert.AreEqual(ucl.GetMonth(), 12);
         }
         [TestMethod]
         public void SetDay()
         {
-
+            Assert.AreEqual(ucl.GetDay(), 29);
         }
         [TestMethod]
         public void GetDateStringYMD()
